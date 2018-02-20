@@ -1,0 +1,98 @@
+/*-----------------------------------------------------------------------------
+
+KENBURNER RESPONSIVE BASIC STYLES OF HTML DOCUMENT
+
+Screen Stylesheet
+
+version:   	1.0
+date:      	07/27/11
+author:		themepunch
+email:     	support@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+
+
+.boxedcontainer		{	max-width: 1170px; margin:auto; padding:0px 30px;}
+
+/*********************************************
+	-	SETTINGS FOR BANNER CONTAINERS	-
+**********************************************/
+
+.tp-banner-container{
+	width:100%;
+	position:relative;
+	padding:0;
+
+}
+
+.tp-banner{
+	width:100%;
+	position:relative;
+}
+
+.tp-banner-fullscreen-container {
+		width:100%;
+		position:relative;
+		padding:0;
+}
+
+/*********************************************
+	-	STYLING FOR THE LOGIN MODAL	-
+**********************************************/
+/* Login Modal */
+.login-form .modal-dialog{ margin: 0;}
+.login-form .modal-content{ width: 320px; padding: 30px; text-align: center;}
+.login-form .modal-content > img{ margin: 0 0 40px;}
+.login-form .modal-content h4{ font-size: 18px; margin: 0 0 30px; font-weight: 300;}
+.login-form .btn-list li:last-child{ margin: 0 0 0 20px;}
+.remeber-nd-forget{ padding: 30px 0 50px; overflow: hidden; width: 100%;}
+.remeber-nd-forget a{ font-size: 14px; color: #959595; font-style: italic;}
+.login-form .social-icons-2 > span{ text-transform: uppercase; color: #252525; display: inline-block; margin: 0 0 20px;}
+.login-form .social-icons-2 ul li a{ color: #cccccc;}
+.login-form .btn.dark{ border-color: #ccc; color: #959595;}
+
+.position-center-center{ left: 50%; position: absolute; top: 50%;
+-webkit-transform: translate(-50%, -50%);
+-moz-transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);}
+
+label { color: #7f7f7f; display: block; font-weight: 400; margin: 0;}
+
+textarea{ border-radius: 0!important; resize: none;}
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+input,
+.form-control{ border: 0; height: 66px; width: 100%; border-radius: 0; color: #252525; font-weight: 400; width: 100%; background: none;
+padding: 10px 0; font-size: 16px; line-height: 1.9; box-shadow: none;
+-webkit-transition: all 0.28s ease;
+transition: all 0.28s ease;}
+.form-group{ position: relative; margin: 0 0 30px;}
+.form-group .control-label{ position: absolute; top: 30px; pointer-events: none; font-size: 16px;
+-webkit-transition: all 0.28s ease;
+transition: all 0.28s ease;}
+.form-group .bar{ position: relative; border-bottom: 1px solid #ccc; display: block;}
+.form-group .bar::before{ content: ''; height: 2px; width: 0; left: 50%; bottom: -1px; position: absolute; z-index: 2;
+-webkit-transition: left 0.28s ease, width 0.28s ease;
+transition: left 0.28s ease, width 0.28s ease;}
+select{ border-bottom: 1px solid #ccc!important;}
+
+.learning-online-form form .bar::before{ background: #fff!important;}
+
+.btn-list{ margin: 0; padding: 0; list-style: none;}
+.btn-list li{ float: left; margin: 0 0 0 30px; width: 46%;}
+.btn-list li:first-child{ margin: 0;}

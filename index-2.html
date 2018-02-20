@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Xav Tech</title>
+
+	    <!-- Xavicon -->
+		<link rel="shortcut icon" href="images/xavicon.png" type="image/x-icon">
+		<link rel="icon" href="images/xavicon.png" type="image/x-icon">
+
+		<!-- StyleSheets -->
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/color.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/transition.css">
+
+		<!-- FontsOnline -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+
+		<!-- JavaScripts -->
+		<script src="js/vendor/modernizr.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+					<!-- smooth scroll-->
+		<script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    // Make sure this.hash has a value before overriding default behavior
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      // Using jQuery's animate() method to add smooth page scroll
+		      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 800, function(){
+
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+		</script>
+
+		<style media="screen">
+			.login-option a {
+				color: rgb(63, 81, 181);
+			}
+
+			.logo-position {
+				position: absolute;
+				z-index: 10;
+				/* top: #distance from top of page#
+				left: #distance from left of page# */
+			}
+
+			.main-heading1 h2{ line-height: 35px; position: relative; padding: 0 28px; text-transform: capitalize; display: inline-block;
+				font-size: 34px; font-weight: 400; margin: 0 0 40px; text-shadow: 1px 1px 5px black;}
+
+			.main-heading2 p{ font-size: 18px; font-weight: 300; line-height: 30px; margin: 0;}
+
+		</style>
+
+	</head>
+	<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper push-wrapper">
+
+		<!-- Header -->
+		<header>
+
+			<!-- Nav -->
+			<div class="nav-holder z-depth-1">
+				<div class="container">
+
+					<!-- Logo -->
+					<div class="logo" style="width:12%">
+						<a href="#"><img src="images/xavlogo.png" alt=""></a>
+					</div>
+					<!-- Logo -->
+
+					<!-- Search Popup -->
+					<div id="searching">
+						<div id="searchThis">
+							<input type="text" placeholder="Search"/>
+							<div id="closeSearch">X</div>
+						</div>
+						<div id="searchResults"></div>
+					</div>
+					<!-- Search Popup -->
+
+					<!-- Navigation -->
+					<div class="nav-list">
+						<ul>
+							<li class="active">
+								<a href="#welcome">Home</a>
+							</li>
+							<li>
+								<a href="#about">About</a>
+							</li>
+							<li>
+								<a href="#careers">Careers</a>
+							</li>
+							<li>
+								<a href="#internship">Internship</a>
+							</li>
+							<li>
+								<a href="#contact">Contact</a>
+							</li>
+							<li>
+								<a href="courses.html">Courses</a>
+								<ul>
+									<li><a class="triple-eff" href="bootcamp.html">Bootcamp</a></li>
+									<li><a class="triple-eff" href="front-end.html">Front-end Development</a></li>
+									<li><a class="triple-eff" href="course-detail.html">Back-end Development</a></li>
+									<li><a class="triple-eff" href="course-detail.html">Design</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="forum/index.html">Community</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Navigation -->
+
+					<!-- Responsive Button -->
+					<div class="responsive-btn">
+						<a data-toggle="modal" data-target=".login-modal" href="#" title="Login/Signup" class="circle-btn"><i class="fa fa-sign-out"></i></a>
+					</div>
+					<!-- Responsive Button -->
+
+				</div>
+			</div>
+			<!-- Nav -->
+
+			<!-- Banner -->
+		   <div class="form-banner parallax-window" data-parallax="scroll" data-image-src="images/banner-3/home-back1.png">
+
+		    	<div class="container">
+					<div class="row">
+
+						<!-- Banner Form -->
+						<div class="col-sm-5 col-xs-12">
+							<div class="learning-online-form">
+								<h2>Learning Online</h2>
+								<p>Sign up to start your free courses</p>
+								<form class="row">
+									<div class="col-sm-6 col-xs-6 r-full-width">
+										<div class="form-group">
+									      	<input type="text" required="required"/>
+									      	<label class="control-label">First name *</label><i class="bar"></i>
+									    </div>
+								    </div>
+								    <div class="col-sm-6 col-xs-6 r-full-width">
+										<div class="form-group">
+									      	<input type="text" required="required"/>
+									      	<label class="control-label">last name *</label><i class="bar"></i>
+									    </div>
+								    </div>
+								    <div class="col-sm-12 col-xs-12">
+										<div class="form-group">
+									      	<input type="text" required="required"/>
+									      	<label class="control-label">Email *</label><i class="bar"></i>
+									    </div>
+								    </div>
+										<div class="col-sm-12 col-xs-12">
+										<div class="form-group">
+													<input type="text" required="required"/>
+													<label class="control-label">Address *</label><i class="bar"></i>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xs-6 r-full-width">
+										<div class="form-group">
+													<input type="text" required="required"/>
+													<label class="control-label">Cellphone *</label><i class="bar"></i>
+											</div>
+										</div>
+								    <div class="col-sm-12 col-xs-12">
+								    	<button class="btn blue animated fadeInLeft delay-3" style="border-radius:30px; color:black;">Signup</button>
+								    </div>
+								</form>
+							</div>
+						</div>
+						<!-- Banner Form -->
+
+						<!-- Banner Layer -->
+						<div class="col-sm-7">
+							<div class="banner-layer">
+								<img src="images/banner-4/img-02.png" alt="">
+							</div>
+						</div>
+						<!-- Banner Layer -->
+
+					</div>
+				</div>
+		    </div>
+			<!-- Banner -->
+		</header>
+		<!-- Header -->
+
+		<!-- Main Content -->
+		<main class="main-content">
+
+			<!-- Why Chose Us -->
+			<section  id="about" class="why-chose-us style-2 tc-padding" style="background-color:white">
+				<div class="container">
+
+					<!-- Main Heading -->
+					<div class="main-heading-holder">
+						<div class="main-heading2 h-black p-black">
+							<h2>About Us</h2>
+							<p>Xav Tech provides an enriched learning environment that has helped countless students get ahead.  
+								Brain child of, The Digital Academy, Xav Tech was created to address the frustrating lack of digital
+								skills on the continent. Our vision is to create opportunities for youth through incentive-based learning.
+								Contact us for more information.</p>
+						</div>
+					</div>
+					<!-- Main Heading -->
+					<!-- Facts Row -->
+				</div>
+			</section>
+			<!-- Why Chose Us -->
+
+			<!-- Our Courses -->
+			<section id="careers" class="our-courses style-2 tc-padding form-banner parallax-window" data-parallax="scroll" data-image-src="images/our-courses-1/bg-careers1.png">
+				<!-- <div class="form-banner parallax-window" data-parallax="scroll" data-image-src="images/our-courses-1/bg-careers.png"> -->
+				<div class="container">
+
+					<!-- Main Heading -->
+					<div class="main-heading-holder">
+						<div class="main-heading1 h-white p-white">
+							<h2>CAREERS</h2>
+							<p></p>
+						</div>
+					</div>
+					<!-- Main Heading -->
+
+					<!-- Our Courses -->
+					<div class="courses-slider-3">
+
+						<!-- Courses Column -->
+						<div class="item">
+							<div class="course-column tc-hover">
+								<div class="course-img">
+									<img src="images/our-courses-1/img-01.png" alt="">
+								</div>
+								<div class="course-detail">
+									<h3><a href="#">Front-end Development</a></h3>
+									<p>Front-end web development is the practice of producing HTML, CSS and JavaScript
+										for a website or Web Application so that a user can see and interact with them directly.</p>
+										<br><br><br>
+								</div>
+							</div>
+						</div>
+						<!-- Courses Column -->
+
+						<!-- Courses Column -->
+						<div class="item">
+							<div class="course-column tc-hover">
+								<div class="course-img">
+									<img src="images/our-courses-1/img-02.png" alt="">
+								</div>
+								<div class="course-detail">
+									<h3><a href="#">Back-end Development</a></h3>
+									<p>A back-end web developer is responsible for server-side web application logic and integration
+										of the work front-end developers do. Back-end developers usually write the web services and APIs
+										used by front-end developers and mobile application developers.</p>
+								</div>
+							</div>
+						</div>
+						<!-- Courses Column -->
+
+						<!-- Courses Column -->
+						<div class="item">
+							<div class="course-column tc-hover">
+								<div class="course-img">
+									<img src="images/our-courses-1/img-03.png" alt="">
+								</div>
+								<div class="course-detail">
+									<h3><a href="#">Design</a></h3>
+									<p>A designer, web or graphic, works on the look and feel of a website or software. Web design
+										encompasses several different aspects, including webpage layout, content production, and graphic design.</p>
+										<br><br>
+								</div>
+							</div>
+						</div>
+						<!-- Courses Column -->
+
+					</div>
+					<!-- Our Courses -->
+
+				</div>
+			</div>
+			</section>
+			<!-- Our Courses -->
+
+			<!-- Up Comming Eventes -->
+			<section id="internship" class="comming-events tc-padding gray-bg">
+				<div class="container">
+
+					<!-- Main Heading -->
+					<div class="main-heading-holder">
+						<div class="main-heading2">
+							<h2>Internship at the Digital Academy</h2>
+							<p>After you have completed your chosen discipline (s), you have an option to apply to the digital
+								academy, whereby you will be required to write a <br> test, for a chance to be invited for an interview.</p>
+								<br><br><br>
+							<ul class="btn-list" style=>
+								<li style="width:100%;"><a style="border-radius:30px;" class="btn blue animated fadeInLeft delay-3" href="https://www.thedigitalacademy.co.za/">Apply Now</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- Main Heading -->
+				</div>
+			</section>
+			<!-- Up Comming Eventes -->
+
+			<!-- Video Section -->
+			<div class="testimonial overlay-dark parallax-window tc-padding" data-parallax="scroll" data-image-src="images/testimonial/quotepic.png">
+				<div class="container">
+					<ul id="testimonil-slider" class="testimonil-slider">
+					  	<li><br><br><br>
+					  		<p style="">"It's not that we use technology, We live technology"</p>
+								<span>Godfrey Reggio</span>
+					  	</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Video Section -->
+
+			<!-- Contact Us -->
+			<section id="contact" class=" tc-padding">
+				<div class="container">
+
+					<!-- Main Heading -->
+					<div class="main-heading-holder">
+						<div class="main-heading2">
+							<h2>CONTACT US</h2>
+						</div>
+					</div>
+					<!-- Main Heading -->
+
+					<!-- Adress -->
+					<div class="about-us-inner">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-5">
+								<div class="contact-address z-depth-1">
+									<h3>Contact Info</h3>
+									<p>77 Commisioner Street, Marshaltown, JHB.</p>
+									<ul class="address-list">
+										<li><i class="fa fa-phone"></i>077 555 9996</li>
+										<li><i class="fa fa-envelope"></i>info@xavtech.com</li>
+									</ul>
+									<div class="social-icons-2">
+										<ul>
+											<li><a class="fa fa-twitter" href="https://twitter.com/StreetDev"></a></li>
+
+											<li><a class="fa fa-facebook-square" href="https://www.facebook.com/The-Digital-Academy-1417396758590167/"></a></li>
+											<li><a class="fa fa-linkedin-square" href="https://www.linkedin.com/m/login/"></a></li>
+											<br><br><br><br><br><br>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<!-- Contact Form -->
+							<div class="col-lg-8 col-md-8 col-sm-7">
+								<div class="contact-address z-depth-1">
+									<h3>Leave a Message</h3>
+									<p>If there’s anything you’d like to know about Xav Tech and the curriculum, please get in touch.</p>
+
+									<form id="contact-form" class="row">
+										<div class="col-sm-4 col-xs-4 r-full-width">
+											<div class="form-group">
+														<input type="text" required="required"/>
+														<label class="control-label">Name</label><i class="bar"></i>
+												</div>
+											</div>
+											<div class="col-sm-4 col-xs-4 r-full-width">
+											<div class="form-group">
+														<input type="text" required="required"/>
+														<label class="control-label">Email *</label><i class="bar"></i>
+												</div>
+											</div>
+											<div class="col-sm-4 col-xs-4 r-full-width">
+											<div class="form-group">
+														<input type="text" required="required"/>
+														<label class="control-label">Phone</label><i class="bar"></i>
+												</div>
+											</div>
+											<div class="col-sm-12 col-xs-12">
+												<div class="form-group m-0">
+														<textarea required="required"></textarea>
+														<label class="control-label">Message *</label><i class="bar"></i>
+												</div>
+											</div>
+											<div class="col-sm-12 col-xs-12">
+												<button class="btn blue z-depth-1" style="border-radius:30px;">Send Message<i class="fa fa-send"></i></button>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- Contact Form -->
+
+						</div>
+					</div>
+					<!-- Adress -->
+
+				</div>
+			</section>
+			<!-- Contact Us -->
+		</main>
+		<!-- Main Content -->
+
+		<!-- Footer -->
+		<footer class="footer" style="background:#313fa0">
+			<!-- Footer Columns -->
+			<div class="footer-column">
+				<div class="container">
+					<div class="row">
+
+						<!-- Colunm Widget -->
+						<div class="col-lg-6 col-md-6 col-sm-4">
+							<div class="f-column-widget">
+								<h4>Contact School</h4>
+								<div class="address-widget">
+									<p>77 Commisioner Street, Marshaltown, JHB.</p>
+									<ul class="address-list">
+										<li><i class="fa fa-phone"></i>077 555 9996</li>
+										<li><i class="fa fa-envelope"></i>info@xavtech.com</li>
+									</ul>
+									<ul class="social-icons">
+										<li><a class="fa fa-twitter" href="#"></a></li>
+										<li><a class="fa fa-facebook" href="#"></a></li>
+										<li><a class="fa fa-linkedin" href="#"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Colunm Widget -->
+
+						<!-- Colunm Widget -->
+						<div class="col-lg-6 col-md-6 col-sm-4">
+							<div class="f-column-widget">
+								<h4>Digital Academy</h4>
+								<div class="newslatter">
+									<p>The Digital Academy recruits motivated young people with a raw talent for Web and software development.
+											They learn practical, hands-on development skills that are needed in the real world.</p>
+											<ul class="social-icons">
+													<li><a class="fa fa-twitter" href="#"></a></li>
+													<li><a class="fa fa-facebook" href="#"></a></li>
+													<li><a class="fa fa-linkedin" href="#"></a></li>
+												</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Colunm Widget -->
+
+					</div>
+				</div>
+			</div>
+			<!-- Footer Columns -->
+
+		<!-- Footer -->
+		<footer class="footer">
+
+			<!-- Footer Columns -->
+
+			<!-- Sub Footer -->
+			<div class="sub-footer" style="background-color:white">
+				<div class="container" >
+					<p style="color:black; margin-left:32%;">© Copyright 2018 Xav Tech by Technobrains, Digital Academy.</p>
+				</div>
+			</div>
+			<!-- Sub Footer -->
+
+		</footer>
+		<!-- Footer -->
+
+	</div>
+	<!-- Wrapper -->
+
+	<!-- back To Button -->
+	<span id="scrollup" class="scrollup circle-btn"><i class="fa fa-angle-up"></i></span>
+	<!-- back To Button -->
+
+	<!-- Login Form -->
+	<div class="login-form">
+		<div class="modal fade login-modal">
+		  	<div class="modal-content position-center-center tc-hover">
+				<img src="images/xavlogo.png" alt="">
+				<h4>::: Login to your account :::</h4>
+				<form class="login-form">
+					<div class="form-group">
+				      	<input type="text" required="required"/>
+				      	<label class="control-label">Username or Email</label><i class="bar"></i>
+				    </div>
+				    <div class="form-group">
+				      	<input type="password" required="required"/>
+				      	<label class="control-label">password</label><i class="bar"></i>
+				    </div>
+				    <ul class="btn-list">
+				    	<li><button class="btn blue sm full-width">Login</button></li>
+				    	<li><button class="btn blank dark sm full-width">Sign up</button></li>
+				    </ul>
+				    <div class="remeber-nd-forget">
+			    		<a class="remember pull-left" href="#">Remember me</a>
+				    	<a href="#" class="forget pull-right">Forgot password ?</a>
+				    </div>
+				</form>
+		  	</div>
+		</div>
+	</div>
+	<!-- Login Form -->
+
+	<!-- Java Script -->
+	<script src="js/vendor/jquery.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script src="js/gmap3.min.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/contact-form.js"></script>
+	<script src="js/bigslide.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/countTo.js"></script>
+	<script src="js/owl-carousel.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/prettyPhoto.js"></script>
+	<script src="js/isotope.pkgd.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+
+</html>
